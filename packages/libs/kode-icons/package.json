@@ -56,12 +56,10 @@
     "build": "unbuild",
     "format": "pnpm run --sequential /^format:.*/",
     "format:lint": "pnpm run lint:src --fix",
-    "format:md": "remark README.md -o --use @kadena-dev/markdown",
     "format:src": "prettier . --cache --write",
     "generate:icons": "jiti scripts/generateIcons.ts && pnpm build && pnpm run format:src",
     "lint": "pnpm run /^lint:.*/",
     "lint:fmt": "prettier . --cache --check",
-    "lint:pkg": "lint-package",
     "lint:src": "eslint scripts --ext .js,.ts,.tsx",
     "verify": "tsc --noEmit"
   },
@@ -70,8 +68,6 @@
   },
   "devDependencies": {
     "@kadena-dev/eslint-config": "workspace:*",
-    "@kadena-dev/lint-package": "workspace:*",
-    "@kadena-dev/markdown": "workspace:*",
     "@kadena-dev/shared-config": "workspace:*",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",

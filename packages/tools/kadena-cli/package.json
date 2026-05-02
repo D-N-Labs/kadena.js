@@ -41,7 +41,6 @@
     "bundle": "rollup -c rollup.config.mjs",
     "dev": "swc --config-file .swcrc ./src -d lib --strip-leading-paths -q && NODE_ENV=development KADENA_LOG=debug node lib/index.js",
     "format": "pnpm run /^format:.*/",
-    "format:md": "remark README.md -o --use @kadena-dev/markdown",
     "format:src": "prettier config src --write",
     "generate:all": "cache-sh -i \"node_modules/.kadena/**\" -- pnpm run \"/^generate:pact:.*/\"",
     "generate:pact:faucet": "pactjs contract-generate --contract user.coin-faucet --api https://api.testnet.chainweb.com/chainweb/0.0/testnet04/chain/1/pact",
@@ -77,7 +76,6 @@
   },
   "devDependencies": {
     "@kadena-dev/eslint-config": "workspace:*",
-    "@kadena-dev/markdown": "workspace:*",
     "@kadena-dev/shared-config": "workspace:*",
     "@kadena/types": "workspace:*",
     "@rollup/plugin-commonjs": "^25.0.7",

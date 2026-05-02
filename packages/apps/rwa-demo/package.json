@@ -69,7 +69,6 @@
     "@graphql-codegen/typescript-operations": "~4.2.0",
     "@graphql-codegen/typescript-react-apollo": "~4.3.0",
     "@kadena-dev/eslint-config": "workspace:*",
-    "@kadena-dev/lint-package": "workspace:*",
     "@kadena-dev/shared-config": "workspace:*",
     "@kadena/pactjs": "workspace:*",
     "@kadena/pactjs-cli": "workspace:*",

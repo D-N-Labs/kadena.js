@@ -112,9 +112,6 @@ Github Config & Actions:
 '@kadena-dev/lint-package':
   - changed-files:
       - any-glob-to-any-file: packages/tools/lint-package/*
-'@kadena-dev/markdown':
-  - changed-files:
-      - any-glob-to-any-file: packages/tools/markdown/*
 '@kadena-dev/scripts':
   - changed-files:
       - any-glob-to-any-file: packages/tools/scripts/*

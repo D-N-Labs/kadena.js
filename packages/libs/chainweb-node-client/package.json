@@ -34,12 +34,10 @@
     "build": "tsc && api-extractor run --verbose",
     "format": "pnpm run --sequential /^format:.*/",
     "format:lint": "pnpm run lint:src --fix",
-    "format:md": "remark README.md -o --use @kadena-dev/markdown",
     "format:src": "prettier . --cache --write",
     "generate:openapi-types": "echo 'openapi specs needs fixes' # openapi-typescript \"./openapi/*.json\" --output ./src/openapi",
     "lint": "pnpm run /^lint:.*/",
     "lint:fmt": "prettier . --cache --check",
-    "lint:pkg": "lint-package",
     "lint:src": "eslint src --ext .js,.ts",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -51,8 +49,6 @@
   },
   "devDependencies": {
     "@kadena-dev/eslint-config": "workspace:*",
-    "@kadena-dev/lint-package": "workspace:*",
-    "@kadena-dev/markdown": "workspace:*",
     "@kadena-dev/shared-config": "workspace:*",
     "@kadena/types": "workspace:*",
     "@microsoft/api-extractor": "^7.43.1",
